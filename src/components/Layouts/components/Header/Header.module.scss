@@ -98,3 +98,19 @@
         fill: rgba(22, 24, 35, 0.34);
     }
 }
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.more-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    padding: 0 4px;
+    margin-left: 16px;
+    cursor: pointer;
+    font-size: 2rem;
+}
