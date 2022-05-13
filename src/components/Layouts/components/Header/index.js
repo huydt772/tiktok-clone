@@ -1,6 +1,5 @@
 import {
     faCircleQuestion,
-    faCloudUpload,
     faCoins,
     faEarthAsia,
     faGear,
@@ -18,9 +17,11 @@ import 'tippy.js/dist/tippy.css';
 import images from '~/assets/images';
 import AccountItem from '~/components/AccountItem';
 import Button from '~/components/Button';
+import { UploadIcon } from '~/components/Icons';
 import { Wrapper as PopperWrapper } from '~/components/Popper';
 import Menu from '~/components/Popper/Menu';
 import styles from './Header.module.scss';
+import Image from '~/components/Image';
 
 const cx = classNames.bind(styles);
 
@@ -188,7 +189,7 @@ function Header() {
                                 placement="bottom"
                             >
                                 <button className={cx('action-btn')}>
-                                    <FontAwesomeIcon icon={faCloudUpload} />
+                                    <UploadIcon />
                                 </button>
                             </Tippy>
                         </>
@@ -204,7 +205,7 @@ function Header() {
                         onChange={handleMenuChange}
                     >
                         {currentUser ? (
-                            <img
+                            <Image
                                 className={cx('user-avatar')}
                                 src="https://p16-sign-va.tiktokcdn.com/tos-useast2a-avt-0068-giso/9366bed55819a1889d53ff3a508c766b~c5_100x100.jpeg?x-expires=1652619600&x-signature=c2LL2ctQhI%2BBruuLm23FnZKncNA%3D"
                                 alt="Dao Le Phuong Hoa"
