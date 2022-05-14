@@ -1,7 +1,6 @@
 // Menu wrapper
 .menu-list {
     width: 224px;
-    margin-top: 3px;
 
     .menu-item {
         margin-left: 0;
@@ -17,11 +16,7 @@
     width: 100%;
     justify-content: flex-start;
     border-radius: unset;
-    height: 42px;
-
-    span:first-child {
-        height: 20px;
-    }
+    line-height: 2.2rem;
 
     &.separate {
         border-top: 1px solid rgba(22, 24, 35, 0.12);
@@ -48,6 +43,7 @@
 
 .header-title {
     position: absolute;
+    font-weight: 600;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

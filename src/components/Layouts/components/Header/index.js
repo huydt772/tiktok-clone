@@ -174,8 +174,12 @@ function Header() {
                         </>
                     ) : (
                         <>
-                            <Button text>Upload</Button>
-                            <Button primary>Login</Button>
+                            <Button className={cx('upload-btn')} text>
+                                Upload
+                            </Button>
+                            <Button className={cx('login-btn')} primary>
+                                Log in
+                            </Button>
                         </>
                     )}
 
