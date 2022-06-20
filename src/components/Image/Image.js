@@ -11,10 +11,10 @@ const Image = forwardRef(
         { src, alt, className, fallback: customFallback = images.noImage, ...props },
         ref,
     ) => {
-        const [fallback, setFallbak] = useState('');
+        const [fallback, setFallback] = useState('');
 
         const handleError = () => {
-            setFallbak(customFallback);
+            setFallback(customFallback);
         };
 
         return (
